@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3001
+const proxy = require('pass-cors')
 
 app.use('/proxy', (req,res)=>{
     data=req.query
