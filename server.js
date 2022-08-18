@@ -2,8 +2,6 @@ const express = require('express')
 const app = express()
 const port = 3001
 
-//Main
-const proxy = require('pass-cors')
 app.use('/proxy', (req,res)=>{
     data=req.query
     if(data.url){
